@@ -22,6 +22,10 @@ section {
     margin-bottom: 2rem;
 }
 
+footer {
+    min-height: 50vh;
+}
+
 .sectionHeader {
     display: flex;
     flex-direction: column;
