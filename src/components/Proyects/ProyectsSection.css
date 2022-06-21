@@ -1,0 +1,33 @@
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.projectsContainer article {
+    background: #0B1F42;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.projectsContainer article:hover {
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.imgContainer {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.projectsContainer h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.linksContainer {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

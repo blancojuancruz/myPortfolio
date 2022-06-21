@@ -1,0 +1,14 @@
+.sectionHeader {
+    font-family: var(--secondaryFont);
+    color: #fcb045;
+}
+
+.sectionHeader h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.sectionHeader p {
+    font-size: 1rem;
+    font-weight: 700;
+}

@@ -1,0 +1,76 @@
+.aboutMe {
+    font-family: var(--secondaryFont);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px
+}
+
+.personalDataContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.personalDataContainer picture {
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, #a02b2b, transparent);
+    display: grid;
+    place-items: center;
+}
+
+.personalDataContainer picture img {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: .5s;
+}
+
+.personalDataContainer picture img:hover {
+    transform: rotate(0);
+}
+
+.photoContentText {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: 700;
+}
+
+.photoContentText h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.photoContentText p {
+    text-align: center;
+}
+
+.photoContentText article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.personalInfo {
+    font-size: 1.2rem;
+}
+
+.personalInfo ul li {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.personalInfo ul li svg {
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}

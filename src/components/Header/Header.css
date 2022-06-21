@@ -1,0 +1,86 @@
+.headerContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(253, 253, 253);
+    gap: 30px;
+    width: 80%;
+}
+
+.textContainer p,
+h1 {
+    padding-left: 1rem;
+}
+
+.textContainer h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--secondaryFont);
+}
+
+.textContainer span {
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    line-height: 1.7;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 2rem;
+    margin-top: .5em;
+    padding-left: 1rem;
+}
+
+.socialLinks a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.linkedin:hover {
+    color: #0a66c2;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+.github:hover {
+    color: #FFFFFFB3;
+}
+
+.callToActionBtn {
+    margin-top: .5em;
+    display: flex;
+    gap: 3rem;
+}
+
+.callToActionBtn a {
+    width: max-content;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+    color: #fff;
+    background: #000;
+    font-family: var(--primaryFont);
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.callToActionBtn a:hover {
+    background: #fff;
+    color: #0a66c2;
+    transition: .3s;
+}

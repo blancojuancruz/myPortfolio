@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mantine/core": "^4.2.10",
+    "@mantine/form": "^4.2.10",
+    "@mantine/hooks": "^4.2.10",
+    "@mantine/next": "^4.2.10",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
+    "react-simple-typewriter": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -19,8 +29,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "./node_modules/standard/eslintrc.json"
     ]
   },
   "browserslist": {
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
   }
 }

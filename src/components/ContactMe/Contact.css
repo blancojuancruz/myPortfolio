@@ -1,0 +1,81 @@
+.contactContainer {
+    display: flex;
+    color: #fff;
+    background-color: none;
+    font-family: var(--secondaryFont);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8%;
+    margin-bottom: 7rem;
+}
+
+.refsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.refsContainer article {
+    background-color: #0B1F42;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400 ease;
+}
+
+.refsContainer article:hover {
+    background: transparent;
+    border-color: #0B1F42;
+}
+
+.refsContainer article svg {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.refsContainer article a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 0.7rem;
+}
+
+.contactForm {
+    width: 40%;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contactForm input {
+    width: 100%;
+}
+
+.mantine-TextInput-label,
+.mantine-Textarea-label,
+.mantine-Text-root {
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--secondaryFont);
+}
+
+.mantine-Button-filled {
+    background: transparent;
+}
+
+.shortInputs {
+    width: 50%;
+}
+
+.error {
+    display: inline;
+    color: red;
+    font-size: .8em;
+}
+
+button[disabled] {
+    color: black;
+    pointer-events: none;
+}
