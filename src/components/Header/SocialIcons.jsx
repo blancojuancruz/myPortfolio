@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 export const SocialIcons = () => {
   return (
@@ -10,9 +10,6 @@ export const SocialIcons = () => {
       </a>
       <a href='https://github.com/blancojuancruz?tab=repositories' className='github' rel='noopener noreferrer' target='_blank'>
         <BsGithub />
-      </a>
-      <a href='https://www.instagram.com/blancojuanchi/' className='instagram' rel='noopener noreferrer' target='_blank'>
-        <BsInstagram />
       </a>
     </div>
   )

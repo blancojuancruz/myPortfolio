@@ -7,7 +7,7 @@ export const ActionButtons = () => {
   return (
     <div className='callToActionBtn'>
       <a href={CV} download>¡Descarga mi CV!</a>
-      <Link to='contactMe' spy smooth className='contactBtn'>Contacta Conmigo</Link>
+      <Link to='contact' spy smooth className='contactBtn'>Contacta Conmigo</Link>
     </div>
   )
 }

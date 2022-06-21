@@ -25,16 +25,14 @@
 .navBarContainer ul li a {
     display: flex;
     align-items: center;
-    color: #45505b;
+    color: #000;
     padding: 0.6rem 1.1rem;
-    margin-bottom: 0.8rem;
-    transition: 0.3s;
     font-size: 0.9rem;
     border-radius: 3.1rem;
     background: #f2f3f5;
     height: 3.5rem;
     overflow: hidden;
-    transition: all 400ms ease;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
