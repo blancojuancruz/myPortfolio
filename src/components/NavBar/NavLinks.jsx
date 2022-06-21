@@ -11,33 +11,33 @@ export const NavLinks = () => {
   return (
     <ul>
       <li>
-        <Link to='home' spy smooth offset={20}>
+        <Link to='home' spy smooth>
           <FaHome />
           <span>Inicio</span>
         </Link>
       </li>
       <li>
-        <Link to='aboutme' spy smooth offset={20}>
+        <Link to='aboutme' spy smooth>
           <BsFillPersonLinesFill />
           <span>Sobre mi</span>
         </Link>
       </li>
       <li>
-        <Link to='skills' spy smooth offset={20}>
+        <Link to='skills' spy smooth>
           <GiSkills />
           <span>Skills</span>
         </Link>
       </li>
       <li>
-        <Link to='projects' spy smooth offset={20}>
+        <Link to='projects' spy smooth>
           <CgWebsite />
           <span>Mis Proyectos</span>
         </Link>
       </li>
       <li>
-        <Link to='contact' spy={false} smooth offset={-100}>
+        <Link to='contact' spy smooth>
           <MdOutlineContactMail />
-          <span>¡Contáctame!</span>
+          <span>Inicio</span>
         </Link>
       </li>
     </ul>

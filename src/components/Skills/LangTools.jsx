@@ -7,6 +7,45 @@ import tailwind from '../../assets/tailwind.png'
 import bootstrap from '../../assets/bootstrap.png'
 import './Skills.css'
 
+const skillsArray = [
+  {
+    id: 1,
+    skillImg: react,
+    tittle: 'React. JS',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 2,
+    skillImg: sass,
+    tittle: 'SASS',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 3,
+    skillImg: mantineUI,
+    tittle: 'Mantine UI',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 4,
+    skillImg: git,
+    tittle: 'Git',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 5,
+    skillImg: tailwind,
+    tittle: 'Tailwind UI',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 6,
+    skillImg: bootstrap,
+    tittle: 'Bootstrap 5',
+    alt: 'Lang Icon'
+  }
+]
+
 export const LangTools = () => {
   return (
     <div className='devSkills'>
@@ -14,36 +53,15 @@ export const LangTools = () => {
         Herramientas de desarrollo
       </h3>
       <div className='imgsContainer'>
-        <span>
-          <picture>
-            <img src={react} alt='React icon' title='ReactJS' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={sass} alt='SASS icon' title='SASS' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={mantineUI} alt='Mantine icon' title='Mantine CSS' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={git} alt='git icon' title='GIT' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={tailwind} alt='Tailwind css icon' title='Tailwind CSS' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={bootstrap} alt='Bootstrap icon' title='Bootstrap' />
-          </picture>
-        </span>
+        {skillsArray.map(({ id, skillImg, tittle, alt }) => {
+          return (
+            <span key={id}>
+              <picture>
+                <img src={skillImg} alt={alt} title={tittle} />
+              </picture>
+            </span>
+          )
+        })}
       </div>
     </div>
   )

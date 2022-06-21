@@ -5,6 +5,33 @@ import javaScript from '../../assets/js.png'
 import typeScript from '../../assets/ts.png'
 import './Skills.css'
 
+const skillsArray = [
+  {
+    id: 1,
+    src: html,
+    title: 'HTML5',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 2,
+    src: css,
+    title: 'CSS3',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 3,
+    src: javaScript,
+    title: 'JavaScript',
+    alt: 'Lang Icon'
+  },
+  {
+    id: 4,
+    src: typeScript,
+    title: 'TypeScript',
+    alt: 'Lang Icon'
+  }
+]
+
 export const LangSkills = () => {
   return (
     <div className='devSkills'>
@@ -12,26 +39,15 @@ export const LangSkills = () => {
         Lenguajes
       </h3>
       <div className='imgsContainer'>
-        <span>
-          <picture>
-            <img src={html} alt='HTML5 icon' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={css} alt='CSS3 icon' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={javaScript} alt='JS icon' />
-          </picture>
-        </span>
-        <span>
-          <picture>
-            <img src={typeScript} alt='TS icon' />
-          </picture>
-        </span>
+        {skillsArray.map(({ id, src, title, alt }) => {
+          return (
+            <span key={id}>
+              <picture>
+                <img src={src} alt={alt} title={title} />
+              </picture>
+            </span>
+          )
+        })}
       </div>
     </div>
   )

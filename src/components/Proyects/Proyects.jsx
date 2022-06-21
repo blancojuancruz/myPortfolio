@@ -1,6 +1,7 @@
 import React from 'react'
 import portfolioPhoto from '../../assets/hsPortfolioDemo.png'
 import portfolioPhoto1 from '../../assets/spotify.png'
+import portfolioPhoto2 from '../../assets/apiProject.png'
 import './ProyectsSection.css'
 
 const projects = [
@@ -17,6 +18,13 @@ const projects = [
     title: 'Reproductor web Clon de Spotify',
     github: 'https://github.com/blancojuancruz/spotifyclonJS',
     demo: 'https://blancojuancruz.github.io/spotifyclonJS/'
+  },
+  {
+    id: 3,
+    img: portfolioPhoto2,
+    title: 'RESTful API',
+    github: 'https://github.com/blancojuancruz/hsStore-API',
+    demo: 'https://radiant-river-14751.herokuapp.com/api/products'
   }
 ]
 

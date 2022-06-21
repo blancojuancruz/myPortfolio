@@ -1,20 +1,32 @@
 .projectsContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    grid-column-gap: 1.2em;
+    grid-row-gap: 1.2em;
+    grid-auto-flow: row;
+    margin-bottom: 2rem;
 }
 
 .projectsContainer article {
-    background: #0B1F42;
+    background: transparent;
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: all 400ms ease;
+    transition: all 400ms ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0;
+    overflow: hidden;
 }
 
 .projectsContainer article:hover {
     border-color: #fff;
-    background-color: transparent;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 33%);
+    top: -6px;
 }
 
 .imgContainer {

@@ -18,14 +18,14 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    width: 100%;
 }
 
 .sectionHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 :root {
