@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    position: relative;
 }
 
 .textContainer {
@@ -79,6 +80,31 @@ h1 {
     color: #0a66c2;
     transition: .3s;
 }
+
+.langSelect {
+    position: fixed;
+    width: max-content;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: .2em;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 700px) {
     .headerContainer {

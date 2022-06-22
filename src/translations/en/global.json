@@ -1,0 +1,54 @@
+{
+    "global": {
+        "lang": "Language"
+    },
+    
+    "navbar": {
+        "home": "Home",
+        "about": "About Me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "¡Contact me!"
+    },
+
+    "header": {
+        "downloadBtn": "Download CV",
+        "contactBtn": "Contact Me"
+    },
+
+    "about": {
+        "aboutDescription":"Hi! my name is Juan Cruz. I am a Junior Web Developer specialized in JavaScript and React",
+        "aboutDescription2": "I share with you some of my data that might interest you"
+    },
+
+    "skills":{
+        "skillsDescription": "These are the languages I work with and more tools that I find useful when developing a website"
+    },
+
+    "projects": {
+        "projectDescription": "Here are some of the projects I worked on in my Web Development / JavaScript / React courses at CoderHouse"
+    },
+
+    "contact": {
+        "contactDescription": "If you like my profile do not hesitate to contact me. I leave you several methods:",
+        "mailToast": "¡Mail Sent!",
+        "errorMessages": {
+            "name": "Please enter a name",
+            "symbolsName": "The name can only contain letters and spaces",
+            "email": "Please enter a valid email address",
+            "symbolsEmail": "The e-mail can only contain the format E-mail",
+            "textArea": "Please enter a message so I can read it later!"
+        },
+        "formText": "You can also leave me a message and I will respond as soon as possible",
+        "inputLabels": {
+            "name": "Name / Company",
+            "nameHolder": "Name",
+            "emailHolder": "example@example.com",
+            "textArea": "Your Message",
+            "textAreaHolder": "Hi Juan Cruz, We are interested in your profile!"
+        },
+        "button": "Send Message",
+        "whatsapp": "Contact me by WhatsApp",
+        "email": "Contact me by Email"
+    }
+}

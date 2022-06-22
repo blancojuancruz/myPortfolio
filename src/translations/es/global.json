@@ -1,0 +1,54 @@
+{
+    "global": {
+        "lang": "Idioma"
+    },
+    
+    "navbar": {
+        "home": "Inicio",
+        "about": "Sobre Mi",
+        "skills": "Conocimientos",
+        "projects": "Proyectos",
+        "contact": "¡Contactame!"
+    },
+
+    "header": {
+        "downloadBtn": "¡Descarga mi CV!",
+        "contactBtn": "Contacta Conmigo"
+    },
+
+    "about": {
+        "aboutDescription":"Hola! mi nombre es Juan Cruz y soy Desarrollador Web Junior especialiazdo en JavaScript y React",
+        "aboutDescription2": "Te comparto algunos de mis datos que quizas te interesen"
+    },
+
+    "skills":{
+        "skillsDescription": "Estos son los lenguajes con los que trabajo y mas herramientas que encuentro utiles a la hora de desarrollar un sitio web"
+    },
+
+    "projects": {
+        "projectDescription": "Les presento algunos de los proyectos en los que trabaje en mis cursos de Desarrollo web / JavaScript / React en CoderHouse"
+    },
+
+    "contact": {
+        "contactDescription": "Si te gusto mi perfil no dudes en ponerte en contacto conmigo. Te dejo varios metodos:",
+        "mailToast": "¡Correo Enviado!",
+        "errorMessages": {
+            "name": "Por favor ingrese un nombre",
+            "symbolsName": "El nombre solo puede contener letras y espacios",
+            "email": "Por favor ingrese un correo valido",
+            "symbolsEmail": "El correo solo puede contener el formato Email",
+            "textArea": "Por favor ingrese un mensaje para que pueda leerlo luego!"
+        },
+        "formText": "También podes dejarme un mensaje respondere a la brevedad",
+        "inputLabels": {
+            "name": "Nombre / Empresa",
+            "nameHolder": "Nombre",
+            "emailHolder": "ejemplo@ejemplo.com",
+            "textArea": "Su mensaje",
+            "textAreaHolder": "Hola Juan Cruz, ¡Nos interesa tu perfil!"
+        },
+        "button": "Enviar mensaje",
+        "whatsapp": "Contactame por WhatsApp",
+        "email": "Contactame por Email"
+    }
+}

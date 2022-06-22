@@ -3,9 +3,11 @@ import mePhoto from '../../assets/me-portfolio.jpg'
 import { ImLocation } from 'react-icons/im'
 import { FaBirthdayCake } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
+import { useTranslation } from 'react-i18next'
 import './AboutMe.css'
 
 export const AboutContent = () => {
+  const { t } = useTranslation('global')
   return (
     <>
       <picture>
@@ -16,7 +18,7 @@ export const AboutContent = () => {
           JavaScript/React Developer
         </h3>
         <p>
-          Te comparto algunos de mis datos que quizas te interesen
+          {t('about.aboutDescription2')}
         </p>
         <article>
           <div className='personalInfo'>

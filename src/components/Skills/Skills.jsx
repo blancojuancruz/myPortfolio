@@ -3,12 +3,14 @@ import './Skills.css'
 import { SectionHeader } from '../SectionHeader/SectionHeader'
 import { SetSills } from './SetSkills'
 import { BasicSkills } from './BasicSkills'
+import { useTranslation } from 'react-i18next'
 
 export const Skills = () => {
+  const { t } = useTranslation('global')
   return (
     <section id='skills' className='skills'>
       <SectionHeader
-        sectionTittle='Skills' sectionDescription='Estos son los lenguajes con los que trabajo y mas herramientas que encuentro utiles a la hora de desarrollar un sitio web'
+        sectionTittle={t('navbar.skills')} sectionDescription={t('skills.skillsDescription')}
       />
       <div className='skillContainer'>
         <SetSills />

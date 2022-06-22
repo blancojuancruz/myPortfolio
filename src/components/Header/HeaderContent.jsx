@@ -3,8 +3,11 @@ import './Header.css'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { SocialIcons } from './SocialIcons'
 import { ActionButtons } from './CallToAction'
+import { useTranslation } from 'react-i18next'
 
 export const HeaderContent = () => {
+  const { t } = useTranslation('global')
+
   const { text } = useTypewriter({
     words: ['Front End Developer', 'React.Js Developer'],
     loop: 0
@@ -15,7 +18,7 @@ export const HeaderContent = () => {
       <h1>Juan Cruz Blanco</h1>
       <p>
         <span>
-          {text}
+          {t(text)}
           <Cursor cursorStyle='_' />
         </span>
       </p>

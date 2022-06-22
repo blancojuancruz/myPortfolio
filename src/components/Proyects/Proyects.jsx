@@ -36,14 +36,14 @@ export const Proyects = () => {
           return (
             <article key={id}>
               <div className='imgContainer'>
-                <img src={img} alt='' />
+                <img src={img} alt='Demo img' />
               </div>
               <h3>
                 {title}
               </h3>
               <div className='linksContainer'>
                 <a href={github} target='_blank' className='portfolioBtn' rel='noreferrer'>GitHub</a>
-                <a href={deploy} target='_blank' className='portfolioBtn' rel='noreferrer'>Demostracion</a>
+                <a href={deploy} target='_blank' className='portfolioBtn' rel='noreferrer'>Demo</a>
               </div>
             </article>
           )

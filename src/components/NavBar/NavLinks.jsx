@@ -5,39 +5,42 @@ import { GiSkills } from 'react-icons/gi'
 import { CgWebsite } from 'react-icons/cg'
 import { MdOutlineContactMail } from 'react-icons/md'
 import { Link } from 'react-scroll'
+import { useTranslation } from 'react-i18next'
 import './NavBar.css'
 
 export const NavLinks = () => {
+  const { t } = useTranslation('global')
+
   return (
     <ul>
       <li>
         <Link to='home' spy smooth>
           <FaHome />
-          <span>Inicio</span>
+          <span>{t('navbar.home')}</span>
         </Link>
       </li>
       <li>
-        <Link to='aboutme' spy smooth>
+        <Link to='aboutme' spy smooth offset={50}>
           <BsFillPersonLinesFill />
-          <span>Sobre mi</span>
+          <span>{t('navbar.about')}</span>
         </Link>
       </li>
       <li>
-        <Link to='skills' spy smooth>
+        <Link to='skills' spy smooth offset={50}>
           <GiSkills />
-          <span>Skills</span>
+          <span>{t('navbar.skills')}</span>
         </Link>
       </li>
       <li>
-        <Link to='projects' spy smooth>
+        <Link to='projects' spy smooth offset={50}>
           <CgWebsite />
-          <span>Mis Proyectos</span>
+          <span>{t('navbar.projects')}</span>
         </Link>
       </li>
       <li>
-        <Link to='contact' spy smooth offset={120}>
+        <Link to='contact' spy smooth offset={110}>
           <MdOutlineContactMail />
-          <span>¡Contactame!</span>
+          <span>{t('navbar.contact')}</span>
         </Link>
       </li>
     </ul>

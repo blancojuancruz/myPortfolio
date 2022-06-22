@@ -5,6 +5,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 import toast, { Toaster } from 'react-hot-toast'
 import { Formik, Form } from 'formik'
+import { useTranslation } from 'react-i18next'
 import {
   Text,
   TextInput,
@@ -15,10 +16,11 @@ import {
 } from '@mantine/core'
 
 export const ContactForm = () => {
+  const { t } = useTranslation('global')
   const form = useRef()
   const [sendedForm, setSendedForm] = useState(false)
 
-  const myToast = () => toast.success('¡Correo Enviado!')
+  const myToast = () => toast.success(t('contact.mailToast'))
   const errorToast = () => toast.error('No se pudo enviar el correo :C')
 
   const sendEmail = (e) => {
@@ -41,7 +43,9 @@ export const ContactForm = () => {
             Email
           </h4>
           <h5>blancojuancruz97@gmail.com</h5>
-          <a href='mailto:blancojuancruz97@gmail.com' target='_blank' rel='noreferrer'>Contactame por Email</a>
+          <a href='mailto:blancojuancruz97@gmail.com' target='_blank' rel='noreferrer'>
+            {t('contact.email')}
+          </a>
         </article>
         <article>
           <BsWhatsapp />
@@ -49,7 +53,9 @@ export const ContactForm = () => {
             WhatsApp
           </h4>
           <h5>+54 11-21755044</h5>
-          <a href='https://api.whatsapp.com/send?phone=541121755044' target='_blank' rel='noreferrer'>Contactame por WhatsApp</a>
+          <a href='https://api.whatsapp.com/send?phone=541121755044' target='_blank' rel='noreferrer'>
+            {t('contact.whatsapp')}
+          </a>
         </article>
       </div>
 
@@ -58,19 +64,19 @@ export const ContactForm = () => {
         validate={(values) => {
           const errors = {}
           if (!values.name) {
-            errors.name = 'Por favor ingrese un nombre'
+            errors.name = t('contact.errorMessages.name')
           } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.name)) {
-            errors.name = 'El nombre solo puede contener letras y espacios'
+            errors.name = t('contact.errorMessages.symbolsName')
           }
 
           if (!values.email) {
-            errors.email = 'Por favor ingrese un correo valido'
+            errors.email = t('contact.errorMessages.email')
           } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(values.email)) {
-            errors.email = 'El nombre solo puede contener letras y espacios'
+            errors.email = t('contact.errorMessages.symbolsEmail')
           }
 
           if (!values.textarea) {
-            errors.textarea = 'Por favor ingrese un mensaje para que pueda leerlo luego!'
+            errors.textarea = t('contact.errorMessages.textArea')
           }
 
           return errors
@@ -86,17 +92,17 @@ export const ContactForm = () => {
               className='contactForm' ref={form}
             >
               <Text>
-                También podes dejarme un mensaje respondere a la brevedad
+                {t('contact.formText')}
               </Text>
 
               <div>
                 <div className='shortInputs'>
                   <SimpleGrid breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
                     <TextInput
-                      label='Nombre / Empresa'
+                      label={t('contact.inputLabels.name')}
                       type='text'
                       name='name'
-                      placeholder='Nombre'
+                      placeholder={t('contact.inputLabels.nameHolder')}
                       values={values.name}
                       onChange={handleChange}
                       onBlur={handleBlur}
@@ -107,7 +113,7 @@ export const ContactForm = () => {
                       label='Email'
                       type='email'
                       name='email'
-                      placeholder='ejemplo@gmail.com'
+                      placeholder={t('contact.inputLabels.emailHolder')}
                       values={values.email}
                       onChange={handleChange}
                       onBlur={handleBlur}
@@ -118,8 +124,8 @@ export const ContactForm = () => {
 
                 <Textarea
                   mt='md'
-                  label='Su mensaje'
-                  placeholder='Hola Juan Cruz, ¡Nos interesa tu perfil!'
+                  label={t('contact.inputLabels.textArea')}
+                  placeholder={t('contact.inputLabels.textAreaHolder')}
                   minRows={3}
                   name='textarea'
                   values={values.textarea}
@@ -129,10 +135,10 @@ export const ContactForm = () => {
 
                 <Group position='right' mt='md'>
                   <Button type='submit' className='portfolioBtn' disabled={isSubmitting}>
-                    Enviar mensaje
+                    {t('contact.button')}
                   </Button>
                   {sendedForm && <Toaster
-                    position='bottom-center'
+                    position='top-center'
                     reverseOrder={false}
                                  />}
                 </Group>
