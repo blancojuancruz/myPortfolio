@@ -95,4 +95,8 @@ button[disabled] {
     .contactForm {
         width: 100%;
     }
+
+    .shortInputs {
+        width: 80%;
+    }
 }
