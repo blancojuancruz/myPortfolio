@@ -43,15 +43,11 @@ h1 {
     font-size: 1.8rem;
 }
 
-.linkedin:hover {
+.linkedinHeader:hover {
     color: #0a66c2;
 }
 
-.instagram:hover {
-    color: #C13584;
-}
-
-.github:hover {
+.githubHeader:hover {
     color: #FFFFFFB3;
 }
 

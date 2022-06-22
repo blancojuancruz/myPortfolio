@@ -1,6 +1,5 @@
 import React from 'react'
 import mePhoto from '../../assets/me-portfolio.jpg'
-import { BsFillPhoneFill } from 'react-icons/bs'
 import { ImLocation } from 'react-icons/im'
 import { FaBirthdayCake } from 'react-icons/fa'
 import { IoMdMail } from 'react-icons/io'
@@ -17,15 +16,11 @@ export const AboutContent = () => {
           JavaScript/React Developer
         </h3>
         <p>
-          Te comparto algunos de mis datos personales que quizas te interesen
+          Te comparto algunos de mis datos que quizas te interesen
         </p>
         <article>
           <div className='personalInfo'>
             <ul>
-              <li>
-                <BsFillPhoneFill />
-                <strong>+54 1121755044</strong>
-              </li>
               <li>
                 <ImLocation />
                 <strong>Buenos Aires, Argentina</strong>

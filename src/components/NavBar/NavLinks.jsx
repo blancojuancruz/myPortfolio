@@ -35,7 +35,7 @@ export const NavLinks = () => {
         </Link>
       </li>
       <li>
-        <Link to='contact' spy smooth offset={180}>
+        <Link to='contact' spy smooth offset={120}>
           <MdOutlineContactMail />
           <span>¡Contactame!</span>
         </Link>
