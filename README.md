@@ -19,6 +19,12 @@ If you have any questions or think you can contribute something that will help m
 
 ## Social
 
+<<<<<<< HEAD
 Linkedin: @blancojuancruz
 Twitter: @blancojuanchi
 Instagram: @blancojuanchi
+=======
+Linkedin: [@blancojuancruz](https://www.linkedin.com/in/juan-cruz-blanco/)
+Twitter: [@blancojuanchi](https://twitter.com/blancojuanchi)
+Instagram: [@blancojuanchi](https://www.instagram.com/blancojuanchi/)
+>>>>>>> 5b0cb8c8b158658d10466630f9de918b598e8bf4
