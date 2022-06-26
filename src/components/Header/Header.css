@@ -10,13 +10,13 @@
     flex-direction: column;
     justify-content: center;
     color: rgb(253, 253, 253);
-    gap: 30px;
     width: 80%;
 }
 
 .textContainer p,
 h1 {
     padding-left: 1rem;
+    margin-bottom: .5em;
 }
 
 .textContainer h1 {
@@ -82,7 +82,7 @@ h1 {
 }
 
 .langSelect {
-    position: fixed;
+    position: absolute;
     width: max-content;
     top: 1em;
     right: 1em;
