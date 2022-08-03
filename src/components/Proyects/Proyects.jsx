@@ -10,7 +10,7 @@ const projects = [
     img: portfolioPhoto,
     title: 'Hardware Store E-commerce',
     github: 'https://github.com/blancojuancruz/reactApp',
-    demo: 'https://blancojuancruz.github.io/coder-project/'
+    demo: 'https://react-app-cyan-nine.vercel.app/'
   },
   {
     id: 2,
