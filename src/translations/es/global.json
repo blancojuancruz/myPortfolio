@@ -26,7 +26,10 @@
     },
 
     "projects": {
-        "projectDescription": "Les presento algunos de los proyectos en los que trabaje en mis cursos de Desarrollo web / JavaScript / React en CoderHouse"
+        "projectDescription": "Les presento algunos de los proyectos en los que trabaje en mis cursos de Desarrollo web / JavaScript / React en CoderHouse",
+        "lang": "Languajes",
+        "devTools": "Herramientas de desarrollo",
+        "bsSkills": "Tambien tengo conocimientos basicos en"
     },
 
     "contact": {

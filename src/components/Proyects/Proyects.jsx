@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     img: portfolioPhoto,
     title: 'Hardware Store E-commerce',
-    github: 'https://github.com/blancojuancruz/coder-project',
+    github: 'https://github.com/blancojuancruz/reactApp',
     demo: 'https://blancojuancruz.github.io/coder-project/'
   },
   {
@@ -32,7 +32,7 @@ export const Proyects = () => {
   return (
     <div className='projectsContainer'>
       {
-        projects.map(({ id, img, title, github, deploy }) => {
+        projects.map(({ id, img, title, github, demo }) => {
           return (
             <article key={id}>
               <div className='imgContainer'>
@@ -43,7 +43,7 @@ export const Proyects = () => {
               </h3>
               <div className='linksContainer'>
                 <a href={github} target='_blank' className='portfolioBtn' rel='noreferrer'>GitHub</a>
-                <a href={deploy} target='_blank' className='portfolioBtn' rel='noreferrer'>Demo</a>
+                <a href={demo} target='_blank' className='portfolioBtn' rel='noreferrer'>Demo</a>
               </div>
             </article>
           )

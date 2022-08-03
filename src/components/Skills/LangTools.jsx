@@ -5,6 +5,7 @@ import mantineUI from '../../assets/mantineUI.png'
 import git from '../../assets/git.png'
 import tailwind from '../../assets/tailwind.png'
 import bootstrap from '../../assets/bootstrap.png'
+import { useTranslation } from 'react-i18next'
 import './Skills.css'
 
 const skillsArray = [
@@ -47,10 +48,12 @@ const skillsArray = [
 ]
 
 export const LangTools = () => {
+  const { t } = useTranslation('global')
+
   return (
     <div className='devSkills'>
       <h3>
-        Herramientas de desarrollo
+        {t('projects.devTools')}
       </h3>
       <div className='imgsContainer'>
         {skillsArray.map(({ id, skillImg, tittle, alt }) => {

@@ -3,6 +3,7 @@ import html from '../../assets/html5.png'
 import css from '../../assets/css3.png'
 import javaScript from '../../assets/js.png'
 import typeScript from '../../assets/ts.png'
+import { useTranslation } from 'react-i18next'
 import './Skills.css'
 
 const skillsArray = [
@@ -33,10 +34,12 @@ const skillsArray = [
 ]
 
 export const LangSkills = () => {
+  const { t } = useTranslation('global')
+
   return (
     <div className='devSkills'>
       <h3>
-        Lenguajes
+        {t('projects.lang')}
       </h3>
       <div className='imgsContainer'>
         {skillsArray.map(({ id, src, title, alt }) => {

@@ -2,14 +2,17 @@ import React from 'react'
 import node from '../../assets/nodejs.png'
 import mongoDB from '../../assets/mongodb.png'
 import mongoose from '../../assets/mongoose.png'
+import { useTranslation } from 'react-i18next'
 import jest from '../../assets/jest.png'
 import './Skills.css'
 
 export const BasicSkills = () => {
+  const { t } = useTranslation('global')
+
   return (
     <div className='devSkills'>
       <h3>
-        Tambien tengo conocimientos basicos en:
+        {t('projects.bsSkills')}
       </h3>
       <div className='imgsContainer'>
         <span>
